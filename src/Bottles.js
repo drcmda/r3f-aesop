@@ -2,7 +2,7 @@ import * as THREE from 'three'
 import React, { useRef, useState, useEffect } from 'react'
 import { useLoader, useFrame } from 'react-three-fiber'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
-import { draco } from 'drei'
+import { draco } from 'drei/loaders/draco'
 import { material } from './store'
 
 function Label({ texture, offset = [-1, -1], repeat = [2, 2], ...props }) {

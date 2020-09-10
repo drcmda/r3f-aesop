@@ -1,7 +1,8 @@
 import * as THREE from 'three'
 import React, { Suspense, useEffect, useRef } from 'react'
 import { Canvas, useThree, useFrame } from 'react-three-fiber'
-import { useCubeTextureLoader, Loader, Stats } from 'drei'
+import { useCubeTextureLoader } from 'drei/loaders/useCubeTextureLoader'
+import { Loader } from 'drei/prototyping/Loader'
 import { RectAreaLightUniformsLib } from 'three/examples/jsm/lights/RectAreaLightUniformsLib'
 import Bottles from './Bottles'
 import { geometry, material } from './store'
@@ -105,7 +106,6 @@ export default function App() {
         </Suspense>
       </Canvas>
       <Loader />
-      <Stats />
     </>
   )
 }
