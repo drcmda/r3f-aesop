@@ -82,7 +82,7 @@ export default function App() {
         <rectAreaLight
           position={[0, 10, -20]}
           width={50}
-          height={100}
+          height={20}
           intensity={4}
           onUpdate={(self) => self.lookAt(0, 0, 0)}
         />
